@@ -26,6 +26,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="login.js"></script>
+
 </head>
 <body>
 
@@ -35,17 +39,18 @@
     <div class="row">
       <div class="seven columns" id="login-window">
         <h4>Login</h4>
-        <p id="login-message">Login to CORE with your Student ID and Password.</p>
+        <p id="login-message">Login to CORE with your Student ID and Password</p>
+        <form name="school" method="post" >
         <label for="idInput">Student ID</label>
-      	<input placeholder="Student ID" id="idInput" type="email">
+      	<input placeholder="Student ID" id="idInput" type="text" name="username">
       	<label for="passwdInput">Password</label>
-      	<input placeholder="Password" id="passwdInput" type="password">
-   		<input class="button-primary" id="button-login" value="Login" type="submit">
-        
+      	<input placeholder="Password" id="passwdInput" type="password" name="password">
+   		  <input class="button-primary" id="button-login" onclick="login()" value="Login" type="submit">
+        <input name="what" id="what" value="" type="hidden">
+      </form>
       </div>
     </div>
   </div>
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
