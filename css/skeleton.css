@@ -94,6 +94,21 @@ html {
   border-color: #6B6B6B;
 }
 
+#class-column-title {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #828282;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#class-column {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #8a8a8a8a;
+  border-style: solid;
+  border-width: 1px;
+}
 
 
 
