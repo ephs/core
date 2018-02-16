@@ -11,24 +11,62 @@
 /* Core Prototype
    ========================================================================= */
 #login-window {
-  background-color: rgba(255, 190, 190, 0.3);
+  background-color: rgba(255, 252, 252, 0.73);
   border-radius: 5px;
   margin-top: 20%;
   padding: 25px;
   border-color: rgba(0, 0, 0, 0.51);
   border-style: solid;
-  border-width: 15px;
+  border-width: 6px;
 }
 
 #window {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(113,113,113);
+  border-radius: 0px 0px 5px 5px;
+  margin-left: 10px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  border-color: rgba(113,113,113);
+  border-style: solid;
+  border-width: 5px;
+  border-top: 0px;
+}
+
+#title {
+  background-color: rgba(113,113,113);
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  border-color: rgba(113,113,113);
+  border-style: solid;
+  border-width: 5px;
+  border-bottom: 0px;
+  text-align: center;  
+}
+
+#title-window {
+  background-color: rgba(113,113,113);
   border-radius: 5px;
   margin-left: 10px;
   margin-top: 10px;
-  padding: 25px;
-  border-color: rgba(0, 0, 0, 0.51);
+  padding: 0px;
+  border-color: rgba(0, 0, 0, 0);
   border-style: solid;
   border-width: 5px;
+}
+
+#text {
+  background-color: rgba(255,255,255, 0.88);
+  border-radius: 5px;
+  padding: 25px;
+  padding-top: 5px;
+}
+
+#icon {
+  font-size: 36px;
+  float: center;
 }
 
 #login-message {
@@ -40,9 +78,31 @@
   margin-bottom: 5px;
 }
 
+#login-form{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#title-text {
+  margin-bottom: 0px;
+  color: #dedede;
+  text-align: center;
+}
+
+#assigned {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+#icon-window {
+  margin-bottom: 0px;
+}
+
 html {
-  background: linear-gradient(120deg, rgba(171, 40, 40, 0.95), rgb(41, 39, 39));
+  background: linear-gradient(120deg, rgba(150, 40, 40, 0.95), rgb(41, 39, 39));
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 #button-login {
@@ -58,6 +118,21 @@ html {
   border-color: #6B6B6B;
 }
 
+#class-column-title {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #828282;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#class-column {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #8a8a8a8a;
+  border-style: solid;
+  border-width: 1px;
+}
 
 
 
@@ -178,7 +253,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #222; }
 
 
