@@ -16,6 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,25 +46,28 @@
         <div id="window">
           <div id="text">
             <div id="icon-window">
-              <p id="icon">☑</p>
+              ☑
             </div>
             <div id="assigned-window">
-              <p id="assigned">No assigned class!</p>
+              No assigned class!
             </div>
           </div>
         </div>
       </div>
-      <div class="six columns">
+      <div class="six columns" id="date-div">
         <div id="title">
           <h5 id="title-text">Core Date</h5>
         </div>
         <div id="window">
           <div id="text">
-            <p>Next Core is on January 11, 2018</p>
-            <p>No class assigned at this point</p>
+              <i class="far fa-calendar" id="icon-calendar"></i>
+            <div id="date-window">
+               Next Core on Feburary 29th
+            </div>
           </div>
         </div>
       </div>
+  	</div>
     <div class="row">
       <div class="twelve columns">
         <div id="title">
@@ -73,57 +77,57 @@
           <div id="text">
           <!-- Classes Signup Title Row
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column-title" >Category</div>
-            <div class="three columns" id="class-column-title" >Session</div>
-            <div class="two columns"   id="class-column-title" >Date</div>
-            <div class="two columns"   id="class-column-title" >Open Seats</div>
-            <div class="three columns" id="class-column-title" >Teacher Name</div>
+          <div class="row" id="class-row-title">
+            <div class="three columns"   id="class-column" >Category</div>
+            <div class="three columns" id="class-column" >Name</div>
+            <div class="three columns"   id="class-column" >Date</div>
+            <div class="two columns"   id="class-column" >Seats</div>
+            <div class="two columns end" id="class-column" >Advisor</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column" >MEDIA CENTER</div>
+          <div class="row odd" id="class-row">
+            <div class="three columns"   id="class-column" >Media Center</div>
             <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="two columns"   id="class-column" >2018-01-11</div>
+            <div class="three columns"   id="class-column" >2018-01-11</div>
             <div class="two columns"   id="class-column" >42</div>
-            <div class="three columns" id="class-column" >Tim Quick</div>
+            <div class="two columns end" id="class-column" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column" >MEDIA CENTER</div>
-            <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="two columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >42</div>
-            <div class="three columns" id="class-column" >Tim Quick</div>
+          <div class="row" id="class-row">
+            <div class="three columns"   id="class-column" >Media Center</div>
+            <div class="three columns" id="class-column" >Group Study A</div>
+            <div class="three columns"   id="class-column" >2018-01-11</div>
+            <div class="two columns"   id="class-column" >4</div>
+            <div class="two columns end" id="class-column" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column" >MEDIA CENTER</div>
-            <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="two columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >42</div>
-            <div class="three columns" id="class-column" >Tim Quick</div>
+          <div class="row odd" id="class-row">
+            <div class="three columns"   id="class-column" >Media Center</div>
+            <div class="three columns" id="class-column" >Group Study B</div>
+            <div class="three columns"   id="class-column" >2018-01-11</div>
+            <div class="two columns"   id="class-column" >2</div>
+            <div class="two columns end" id="class-column" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column" >MEDIA CENTER</div>
-            <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="two columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >42</div>
-            <div class="three columns" id="class-column" >Tim Quick</div>
+          <div class="row" id="class-row">
+            <div class="three columns"   id="class-column" >Math</div>
+            <div class="three columns" id="class-column" >Calculus Test Review</div>
+            <div class="three columns"   id="class-column" >2018-01-11</div>
+            <div class="two columns"   id="class-column" >35</div>
+            <div class="two columns end" id="class-column" >Alyce Price</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-            <div class="two columns"   id="class-column" >MEDIA CENTER</div>
-            <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="two columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >42</div>
-            <div class="three columns" id="class-column" >Tim Quick</div>
+          <div class="row odd" id="class-row">
+            <div class="three columns"   id="class-column" >Science</div>
+            <div class="three columns" id="class-column" >Physics Lab Make-Up</div>
+            <div class="three columns"   id="class-column" >2018-01-11</div>
+            <div class="two columns"   id="class-column" >20</div>
+            <div class="two columns end" id="class-column" >Micheal Maas</div>
           </div>
         </div>
       </div>
