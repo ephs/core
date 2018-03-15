@@ -20,7 +20,7 @@
   border-width: 6px;
 }
 
-#window {
+.window {
   background-color: rgb(113,113,113);
   border-radius: 0px 0px 5px 5px;
   margin-left: 0px;
@@ -33,7 +33,7 @@
   border-top: 0px;
 }
 
-#title {
+.title {
   background-color: rgb(113,113,113);
   border-radius: 5px 5px 0px 0px;
   margin-left: 0px;
@@ -59,7 +59,7 @@
   width: 100%;
 }
 
-#text {
+.text {
   background-color: rgba(255,255,255, 0.88);
   border-radius: 5px;
   padding: 25px;
@@ -99,7 +99,7 @@
   margin-bottom: 0px;
 }
 
-#title-text {
+.title-text {
   margin-bottom: 0px;
   color: #dedede;
   text-align: center;
