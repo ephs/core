@@ -23,7 +23,7 @@
 #window {
   background-color: rgba(113,113,113);
   border-radius: 0px 0px 5px 5px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 0px;
   padding: 0px;
   padding-top: 0px;
@@ -36,7 +36,7 @@
 #title {
   background-color: rgba(113,113,113);
   border-radius: 5px 5px 0px 0px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 10px;
   padding: 0px;
   border-color: rgba(113,113,113);
@@ -49,12 +49,14 @@
 #title-window {
   background-color: rgba(113,113,113);
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
   margin-top: 10px;
   padding: 0px;
   border-color: rgba(0, 0, 0, 0);
   border-style: solid;
   border-width: 5px;
+  width: 100%;
 }
 
 #text {
@@ -67,6 +69,20 @@
 #icon {
   font-size: 36px;
   float: center;
+}
+
+#icon-window {
+  float: left;
+  font-size: 40px;
+  color: green;
+}
+
+#icon-calendar {
+  float: left;
+  font-size: 30px;
+  color: black;
+  padding-top: 20px;
+  padding-right: 5px;
 }
 
 #login-message {
@@ -89,14 +105,15 @@
   text-align: center;
 }
 
-#assigned {
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 15px;
+#assigned-window {
+  padding-top: 19px;
+  font-size: 20px;
+  color: green;
 }
 
-#icon-window {
-  margin-bottom: 0px;
+#date-window {
+  padding-top: 19px;
+  font-size: 20px;
 }
 
 html {
@@ -118,20 +135,38 @@ html {
   border-color: #6B6B6B;
 }
 
-#class-column-title {
-  border-radius: 5px;
+#class-column {
   text-align: center;
-  background-color: #828282;
-  border-style: solid;
-  border-width: 2px;
+  margin-left: 0px;
+  font-size: 14px;
 }
 
-#class-column {
-  border-radius: 5px;
-  text-align: center;
-  background-color: #8a8a8a8a;
-  border-style: solid;
+#class-row {
   border-width: 1px;
+  border-style: solid;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+}
+
+#class-row-title {
+  border-width: 2px; 
+  border-style: solid; 
+  background-color: #828282;
+}
+
+.odd {
+  background-color: #8a8a8a8a;
+}
+
+.two.columns.end {
+  width: 20.2%;
+}
+
+.logo-image {
+  width: 75px;
+  height: 75px;
+  float: right;
 }
 
 
