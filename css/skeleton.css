@@ -114,14 +114,6 @@ html {
   font-size: 14px;
 }
 
-#class-row {
-  border-width: 1px;
-  border-style: solid;
-  border-left-width: 0px;
-  border-top-width: 0px;
-  border-right-width: 0px;
-}
-
 #class-row-title {
   border-width: 2px; 
   border-style: solid; 
@@ -150,6 +142,24 @@ html {
   border-width: 5px;
   border-bottom: 0px;
   text-align: center;  
+}
+
+.class-column {
+  text-align: center;
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+.columns.class-column {
+  margin-left: 0px;
+}
+
+.class-row {
+  border-width: 1px;
+  border-style: solid;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
 }
 
 .two.columns.end {
