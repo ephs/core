@@ -203,6 +203,10 @@ html {
   overflow: scroll;
 }
 
+#assigned-text {
+  margin: 0px;
+}
+
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
