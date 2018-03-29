@@ -121,8 +121,12 @@ html {
   background-color: #828282;
 }
 
-.odd {
-  background-color: #8a8a8a8a;
+.class-row.odd {
+  background-color: #bfbfbf80;
+}
+
+.class-row:hover {
+  background-color: white;
 }
 
 .text {
@@ -162,6 +166,7 @@ html {
   border-top-width: 0px;
   border-right-width: 0px;
   cursor: pointer;
+  background-color: #68686880;
 }
 
 .two.columns.end {
@@ -205,6 +210,10 @@ html {
 
 #assigned-text {
   margin: 0px;
+}
+
+.signup {
+  padding: 10px;
 }
 
 /* Table of contents
