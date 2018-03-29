@@ -25,41 +25,49 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="img/eplogo.png">
+  
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/date.js"></script>
+  <script src="js/landing.js"></script>
 
 </head>
-<body>
+<body onload="nextCoreDate()">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="twelve columns" id="title-window">
-        <h3 id="title-text">EPHS Core</h3>
+        <div class="center-title">
+          <img class="title-logo-image" src="img/eplogo.png">
+          <h3 class="title-text">EPHS Core</h3>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="six columns">
-        <div id="title">
-          <h5 id="title-text">Assigned</h5>
+        <div class="title">
+          <h5 class="title-text">Assigned</h5>
         </div>
-        <div id="window">
-          <div id="text">
+        <div class="window">
+          <div class="text">
             <div id="icon-window">
               ☑
             </div>
             <div id="assigned-window">
-              No assigned class!
+              <p id="assigned-text">No assigned class!</p>
             </div>
           </div>
         </div>
       </div>
       <div class="six columns" id="date-div">
-        <div id="title">
-          <h5 id="title-text">Core Date</h5>
+        <div class="title">
+          <h5 class="title-text">Core Date</h5>
         </div>
-        <div id="window">
-          <div id="text">
+        <div class="window">
+          <div class="text">
               <i class="far fa-calendar" id="icon-calendar"></i>
             <div id="date-window">
                Next Core on Feburary 29th
@@ -70,65 +78,180 @@
   	</div>
     <div class="row">
       <div class="twelve columns">
-        <div id="title">
-          <h5 id="title-text">Sign Up for Classes</h5>
+        <div class="title">
+          <h5 class="title-text">Sign Up for Classes</h5>
         </div>
-        <div id="window">
-          <div id="text">
+        <div class="window">
+          <div class="text signup">
           <!-- Classes Signup Title Row
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
           <div class="row" id="class-row-title">
-            <div class="three columns"   id="class-column" >Category</div>
-            <div class="three columns" id="class-column" >Name</div>
-            <div class="three columns"   id="class-column" >Date</div>
-            <div class="two columns"   id="class-column" >Seats</div>
-            <div class="two columns end" id="class-column" >Advisor</div>
+            <div class="class-column three columns" >Category</div>
+            <div class="class-column three columns" >Name</div>
+            <div class="class-column three columns" >Date</div>
+            <div class="class-column two columns" >Seats</div>
+            <div class="class-column two columns end" >Advisor</div>
+          </div>
+          
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div class="row-container">
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Quiet Study</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >42</div>
+            <div class="class-column two columns end" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row odd" id="class-row">
-            <div class="three columns"   id="class-column" >Media Center</div>
-            <div class="three columns" id="class-column" >Quiet Study</div>
-            <div class="three columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >42</div>
-            <div class="two columns end" id="class-column" >Tim Quick</div>
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study A</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >4</div>
+            <div class="class-column two columns end" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row" id="class-row">
-            <div class="three columns"   id="class-column" >Media Center</div>
-            <div class="three columns" id="class-column" >Group Study A</div>
-            <div class="three columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >4</div>
-            <div class="two columns end" id="class-column" >Tim Quick</div>
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study B</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >2</div>
+            <div class="class-column two columns end" >Tim Quick</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row odd" id="class-row">
-            <div class="three columns"   id="class-column" >Media Center</div>
-            <div class="three columns" id="class-column" >Group Study B</div>
-            <div class="three columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >2</div>
-            <div class="two columns end" id="class-column" >Tim Quick</div>
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Math</div>
+            <div class="class-column three columns" >Calculus Test Review</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >35</div>
+            <div class="class-column two columns end" >Alyce Price</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row" id="class-row">
-            <div class="three columns"   id="class-column" >Math</div>
-            <div class="three columns" id="class-column" >Calculus Test Review</div>
-            <div class="three columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >35</div>
-            <div class="two columns end" id="class-column" >Alyce Price</div>
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Science</div>
+            <div class="class-column three columns" >Physics Lab Make-Up</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >20</div>
+            <div class="class-column two columns end" >Micheal Maas</div>
           </div>
           <!-- Classes Signup Rows
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row odd" id="class-row">
-            <div class="three columns"   id="class-column" >Science</div>
-            <div class="three columns" id="class-column" >Physics Lab Make-Up</div>
-            <div class="three columns"   id="class-column" >2018-01-11</div>
-            <div class="two columns"   id="class-column" >20</div>
-            <div class="two columns end" id="class-column" >Micheal Maas</div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study A</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >4</div>
+            <div class="class-column two columns end" >Tim Quick</div>
           </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study B</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >2</div>
+            <div class="class-column two columns end" >Tim Quick</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Math</div>
+            <div class="class-column three columns" >Calculus Test Review</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >35</div>
+            <div class="class-column two columns end" >Alyce Price</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Science</div>
+            <div class="class-column three columns" >Physics Lab Make-Up</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >20</div>
+            <div class="class-column two columns end" >Micheal Maas</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study A</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >4</div>
+            <div class="class-column two columns end" >Tim Quick</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study B</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >2</div>
+            <div class="class-column two columns end" >Tim Quick</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Math</div>
+            <div class="class-column three columns" >Calculus Test Review</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >35</div>
+            <div class="class-column two columns end" >Alyce Price</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Science</div>
+            <div class="class-column three columns" >Physics Lab Make-Up</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >20</div>
+            <div class="class-column two columns end" >Micheal Maas</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study A</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >4</div>
+            <div class="class-column two columns end" >Tim Quick</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Media Center</div>
+            <div class="class-column three columns" >Group Study B</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >2</div>
+            <div class="class-column two columns end" >Tim Quick</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row class-row">
+            <div class="class-column three columns" >Math</div>
+            <div class="class-column three columns" >Calculus Test Review</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >35</div>
+            <div class="class-column two columns end" >Alyce Price</div>
+          </div>
+          <!-- Classes Signup Rows
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div onclick="signup(this)" class="row odd class-row">
+            <div class="class-column three columns" >Science</div>
+            <div class="class-column three columns" >Physics Lab Make-Up</div>
+            <div class="class-column three columns date" >2018-01-11</div>
+            <div class="class-column two columns" >20</div>
+            <div class="class-column two columns end" >Micheal Maas</div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
