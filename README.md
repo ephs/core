@@ -6,6 +6,6 @@ This redesign of Core fixes the old, ugly, default Core page and replaces it wit
 
 ![Landing Page](/img/landing.png)
 
-Erik Duxstad ( (@eduxstad)[https://github.com/eduxstad] ) and Avery Bartnik ( (@Jythonscript)[https://github.com/Jythonscript] ) created this prototype. 
+Erik Duxstad ([@eduxstad](https://github.com/eduxstad)) and Avery Bartnik ([@Jythonscript](https://github.com/Jythonscript)) created this prototype. 
 
 The original can be found [here](https://edenprairie_students.na.rapidbiz.com/).
