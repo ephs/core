@@ -1,7 +1,14 @@
 function nextCoreDate() {
-	var d = new Date();	
-	//d.setFullYear(2018, 2, 5); //for testing dates
+	var d = new Date();
+	//header variables
 	var daysUntilCore = 4 - d.getDay();
+	//table variables
+	var dates = document.getElementsByClassName("date");
+	var isMonthLeadingZero = (d.getMonth() + 1) < 10;
+	var isDayLeadingZero = d.getDate() < 10;
+	var monthString = "";
+	var dateString = "";
+	//d.setFullYear(2018, 2, 5); //for testing dates
 	if (daysUntilCore < 0) {
 		daysUntilCore = daysUntilCore + 7;
 	}
@@ -9,16 +16,7 @@ function nextCoreDate() {
 	//Set the 'Core Date' header
 	document.getElementById("date-window").textContent = "Next Core on " + formatDate(d);
 	//Set the 'Date' row in the table
-	var dates = document.getElementsByClassName("date");
-	console.log(dates);
-
-	var isMonthLeadingZero = (d.getMonth() + 1) < 10;
-	var isDayLeadingZero = d.getDate() < 10;
-
-	var monthString = "";
-	var dateString = "";
-
-	if (isMonthLeadingZero) {
+	if (isMonthLeadingZero){
 		monthString = "0";
 	}
 	if (isDayLeadingZero) {
@@ -26,13 +24,9 @@ function nextCoreDate() {
 	}
 	monthString += d.getMonth() + 1;
 	dateString += d.getDate();
-
 	for (i = 0; i < dates.length; i++) {
-
-		//year-month-day, with leading zeroes if applicable
+		//sets each row as year-month-day, with leading zeroes if applicable
 		dates[i].innerText = d.getFullYear() + "-" + monthString + "-" + dateString;
-		
-		
 	}
 }
 
