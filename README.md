@@ -1,4 +1,4 @@
-### Core - A redesign of Eden Prairie High School's Core
+### core - A redesign of Eden Prairie High School's CORE
 ---
 [![Login Page](/img/login.png)](https://ephs.github.io/core)
 
